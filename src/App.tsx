@@ -1,9 +1,22 @@
 import "./App.css";
+import Button from "./components/Button";
+import Counter from "./components/Counter";
 
 function App() {
-  console.log("hola");
+  const handleClick1 = () => {
+    console.log("click 1");
+  };
 
-  return <h1>hola mundo</h1>;
+  return (
+    <section>
+      <h1>hola mundo</h1>
+      <Counter />
+      {/* <Button handleClick={handleClick1}>
+        <span>Submit</span>
+        🥲
+      </Button> */}
+    </section>
+  );
 }
 
 export default App;
